@@ -500,7 +500,7 @@ config t
 R1:pez
 config t
  ip vrf clientBDOb
-  rd __:__
+  rd __9:__
   __________   _____:___
  ip vrf clientBPIb
   rd 999:2
@@ -740,6 +740,8 @@ int gi 1
 @allRouters:
 config t
 cdp run
+int gi 1
+cdp enable
 int gi 2
 cdp enable
 no shut
